@@ -1,0 +1,692 @@
+*{
+    @font-face {
+        font-family: setoFont;
+        src: url(/fonts/setofont.woff);
+    }
+    font-family: setoFont;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+section{
+    line-height: 1;
+}
+
+nav{
+    position: absolute;
+    padding: 0;
+
+    .openbtn1{
+        display: none;
+
+    }
+    
+    .navbar-nav{
+        z-index: 99;
+        position: fixed;
+        top: 30px;
+        right: 50px;
+        font-size: 20px;
+        background-color: rgb(220,216,207);
+        border-radius: 20px;
+        opacity: 0.8;
+        
+        .nav-item{
+            padding: 0 20px;
+
+        }
+    }
+}
+
+.follow{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    top: 50px;
+    left: 50px;
+
+    .text{
+        writing-mode: vertical-lr;
+    }
+}
+
+.scrollDown{
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    padding-right: 30px;
+
+}
+
+.scrollDown span{
+    position: absolute;
+    left: 10px;
+    bottom: 6px;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.scrollDown:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+    animation:circlemove 1.6s ease-in-out infinite,
+                cirlemovehide 1.6s ease-out infinite;
+
+}
+
+.scrollDown:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 70px;
+    background: #000;
+}
+
+@keyframes circlemove{
+    0%{bottom:60px;}
+    100%{bottom:-5px;}
+
+ }
+
+@keyframes cirlemovehide{
+    0%{opacity: 0}
+    50%{opacity: 1}
+    80%{opacity: 0.9}
+    100%{opacity: 0}
+    
+ }
+
+.container-fluid{
+    background-color: rgb(220,216,207);
+    
+}
+
+.carousel-item{
+    margin-top: 160px;
+    padding-bottom: 20px;
+
+    img{
+        border-radius: 0 10px 10px 0;
+        opacity: 0.8;
+
+    }
+}
+
+.col-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .shopName{
+        writing-mode: vertical-lr;
+        color:rgb(150, 148, 148);
+
+        .main{
+            font-size: 80px;
+
+        }
+        .sub{
+            font-size: 30px;
+            text-align: end;
+        }
+    }
+}
+
+.news{
+    background-color: rgb(241, 238, 233);
+
+    .newsBlock{
+        max-width: 80%;
+        padding-bottom: 100px;
+
+        .newsTitle{
+            position: relative;
+            top: 60px;
+            left: -10%;
+            writing-mode: vertical-rl;
+            opacity: 0.6;
+            
+            .main{
+                font-size: 40px;
+       
+            }
+            .sub{
+                font-size: 20px;
+                text-align: end;
+            }
+        }
+        
+        .newsList:last-child{
+            border: 1px solid rgba(0,0,0,0.2);
+            border-left: none;
+            border-right: none;
+            border-top: none;
+        }
+        
+        .newsItem{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            padding: 30px;
+            color: #000;
+            
+        }
+        
+        p{
+            margin: 0;
+            
+        }
+        
+        .date{
+            font-size: 18px;
+            padding-right: 80px;
+            opacity: 0.6;
+        
+        }
+        
+        .title{
+            font-size: 22px;
+            opacity: 0.7;
+        }
+        
+        .icon{
+            position: absolute;
+            right: 10%;
+            font-weight: 600;
+        
+        }
+        
+        .icon::after{
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -8px;
+            width: 30px;
+            height: 30px;
+            border: 2px solid;
+            border-radius: 50%;
+            
+        }
+        
+        a:hover .icon span{
+            position: relative;
+            animation: arrowmove 1.5s ease-in-out infinite,
+                        arrowmovehide 1.5s ease-out infinite;
+        
+        }
+        
+        @keyframes arrowmove{
+            0%{right: 5px;}
+            100%{right: -5px;}
+            
+        }
+        
+        @keyframes arrowmovehide{
+            0%{opacity: 0}
+            50%{opacity: 1}
+            80%{opacity: 0.9}
+            100%{opacity: 0}
+            
+        }
+        
+        .newsItem:hover{
+            text-decoration:none;
+            color: #000;
+        
+        }
+    }
+}
+
+.product{
+    background-color: #f0efee;
+    .productTitle{
+        position: relative;
+        top: 60px;
+        left: 85%;
+        writing-mode: vertical-rl;
+        opacity: 0.6;
+        
+        .main{
+            font-size: 40px;
+   
+        }
+        .sub{
+            font-size: 20px;
+            text-align: end;
+        }
+    }
+
+    .kasutera, .oishii{
+        position: relative;
+        margin: 0 auto;
+        padding: 80px 0;
+        width: 80%;
+        height: 100%;
+        letter-spacing: 2px;
+        
+        .title{
+            position: absolute;
+            top: 20px;
+            left: -50px;
+            writing-mode: vertical-lr;
+            font-size: 28px;
+            opacity: 0.8;
+    
+        }
+    
+        img{
+            width: 100%;
+            border-radius: 30px;
+            transition: all 1s ease-in-out;
+        }
+    
+        img:hover{
+            transform: scale(0.9);
+            transition: all 1s ease-in-out;
+        }
+        
+        h1{
+            padding: 20px;
+            margin: 0;
+            text-align: center ;
+            font-size: 22px;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+    
+        ul{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            gap: 100px;
+            font-size: 18px;
+            opacity: 0.6;
+            font-weight: 600;
+            
+        }
+        
+        li{
+            display: block;
+            list-style-type: none;
+    
+        }
+    }
+}
+
+.shop{
+    background-color: #f1eee9;
+    padding-bottom: 180px;
+
+    .shopTitle{
+        z-index: 99;
+        position: relative;
+        top: 60px;
+        left: 2%;
+        writing-mode: vertical-rl;
+        opacity: 0.6;
+        
+        .main{
+            font-size: 40px;
+   
+        }
+        .sub{
+            font-size: 20px;
+            text-align: end;
+        }
+    }
+
+    .container{
+        position: relative;
+
+        img{
+            width: 70%;
+            height: 500px;
+            border-radius: 0 20px 0 0;
+            padding-left: 80px;
+
+        }
+        
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 350px;
+            left: 35%;
+            padding: 0 70px;
+            min-width: 60%;
+            height: 300px;
+            background-color: #FCFCFC;
+            border-radius: 20px;
+            gap: 20px;
+            
+        }
+        dl{
+            display: flex;
+            align-items: baseline;
+            margin: 0;
+        }
+        
+        dt{
+            padding-right: 50px;
+            font-size: 22px;      
+
+        }
+        dd{
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+
+        }
+    }
+}
+
+.map{
+    padding-bottom: 100px;
+    background-color: #141414;
+    
+    .mapTitle{
+        z-index: 99;
+        position: relative;
+        top: 60px;
+        left: 80%;
+        color: #FCFCFC;
+        writing-mode: vertical-rl;
+        opacity: 0.6;
+        
+        .main{
+            font-size: 40px;
+
+        }
+        .sub{
+            font-size: 20px;
+            text-align: end;
+
+        }
+    }
+    
+    iframe{
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+    }
+}
+
+footer{
+    span{
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 1150px) {
+    .col-5{
+        .shopName{
+            .main{
+                font-size: 45px;
+            }
+            .sub{
+                font-size: 25px;
+            }
+        }
+    }  
+}
+
+@media (max-width: 992px) {
+    .news{
+        .newsBlock{
+            padding-bottom: 40px;
+        }
+    }
+    .product{
+        background-color: #f0efee;
+        .productTitle{
+            position: relative;
+            top: 60px;
+            left: 85%;
+            writing-mode: vertical-rl;
+            opacity: 0.6;
+            
+            .main{
+                font-size: 40px;
+       
+            }
+            .sub{
+                font-size: 20px;
+                text-align: end;
+            }
+        }
+        .kasutera, .oishii{
+            padding: 0;
+        }
+    }
+    .shop{
+        padding-bottom: 100px;
+        .container{
+            img{
+                width: 100%;
+            }
+            .info{
+                min-width: 70%;
+                height: 200px;
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    nav{
+        .navbar-nav{
+            right: 20px;
+
+            .nav-item{
+                padding: 0 5px;
+            }
+        }
+    }
+    .news{
+        .newsBlock{
+            .newsTitle{
+                top: 20px;
+                left: -10%;
+                writing-mode: horizontal-tb;
+                .sub{
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    .product{
+        .productTitle{
+            position: relative;
+            top: 20px;
+            left: 60%;
+            max-width: 30%;
+            writing-mode: horizontal-tb;
+            .main{
+                font-size: 40px;
+            }
+            .sub{
+                font-size: 20px;
+                text-align: start;
+            }
+        }
+    }
+
+    .shop{
+        .container{
+            img{
+                width: 90%;
+                height: 400px;
+                padding: 0 0 10px 80px;
+            }
+            .info{
+                position: relative;
+                top: 0;
+                left: 2%;
+                padding: 0 10px;
+                max-width: 95%;
+                height: 200px;
+            }
+            dt{
+                padding-right: 10px; 
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    nav{
+        .openbtn1{
+            display: block;
+        }
+        .navbar-nav{
+            display: none;
+        }
+    }
+    .follow{
+        top: 22px;
+        left: 30px;
+    
+        .text{
+            display: none;
+        }
+    }
+    .carousel-item{
+        margin-top: 80px;
+
+    }
+    .col-5{
+        .shopName{
+            .main{
+                font-size: 30px;
+            }
+            .sub{
+                font-size: 20px;
+            }
+            .scrollDown{
+                right: 5%;
+                padding-right: 30px;
+            }
+            
+            .scrollDown span{
+                font-size: 15px;
+            }
+            
+            .scrollDown:before {
+                left: -2px;
+            }
+            .scrollDown:after{
+                bottom: 2px;
+                left: 2px;
+                height: 60px;
+            }
+        }
+    }
+    .news{
+        .newsBlock{
+            .newsItem{
+                padding: 15px;
+            }
+            .date{
+                font-size: 16px;
+                padding-right: 30px;
+            }
+            .title{
+                font-size: 18px;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 620px) {
+    .product{
+        .productTitle{
+            top: 0;
+            left: 30%;
+            max-width: 40%;
+        }
+        .kasutera, .oishii{
+            padding: 20px 0;
+            width: 90%;
+            .title{
+                display: none;
+        
+            }
+            h1{
+                padding: 10px;
+                font-size: 20px;
+            }
+        
+            ul{
+                gap: 50px;
+                font-size: 16px;
+
+            }
+            
+            li{
+                display: block;
+                list-style-type: none;
+        
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// .date:before{
+//         content: '';
+//         position: absolute;
+//         bottom: 60px;
+//         width: 100%;
+//         border: 1px solid black;
+//         opacity: 0.15;
+//     }
+    
+    // .date:after{
+    //         content: '';
+    //         position: absolute;
+    //         top: 60px;
+    //         width: 100%;
+    //         border: 1px solid black;
+    //         opacity: 0.15;
+    //     }
