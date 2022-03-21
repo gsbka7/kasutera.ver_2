@@ -276,7 +276,7 @@ nav .navbar-nav .nav-item {
 .news .newsBlock .icon::after {
   content: '';
   position: absolute;
-  top: -2px;
+  top: -7px;
   left: -8px;
   width: 30px;
   height: 30px;
