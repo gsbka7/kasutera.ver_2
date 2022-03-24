@@ -28,6 +28,7 @@ nav{
     }
     
     .navbar-nav{
+        position: relative;
         z-index: 99;
         position: fixed;
         top: 30px;
@@ -40,6 +41,47 @@ nav{
         .nav-item{
             padding: 0 20px;
 
+            .nav-link{
+                position: relative;
+                .cart{
+                    .order{
+                        position: absolute;
+                        top: 5px;
+                        left: 22px;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: rgba(255, 0, 0, 0.98);
+                    }
+                }   
+            }
+        }
+
+    }
+    .cartIcon{
+        display: none;
+        z-index: 99;
+        position:fixed;
+        top: 12px;
+        right: 80px;
+        font-size: 20px;
+        list-style: none;
+
+        i {
+            color: #000;
+            opacity: 0.4;
+        }
+
+        .cart2{
+            .order{
+                position: absolute;
+                top: 5px;
+                left: 70px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: rgba(255, 0, 0, 0.98);
+            }
         }
     }
 }
@@ -262,6 +304,7 @@ nav{
 }
 
 .product{
+    position: relative;
     background-color: #f0efee;
     .productTitle{
         position: relative;
@@ -320,13 +363,13 @@ nav{
     
         ul{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             margin: 0;
             padding: 0;
-            gap: 100px;
             font-size: 18px;
             opacity: 0.6;
             font-weight: 600;
+            padding: 10px 0;
             
         }
         
@@ -335,6 +378,10 @@ nav{
             list-style-type: none;
     
         }
+    }
+    .botton{
+        bottom: 50px;
+        right: 30px;
     }
 }
 
@@ -571,6 +618,10 @@ footer{
         }
         .navbar-nav{
             display: none;
+            
+        }
+        .cartIcon{
+            display: block;
         }
     }
     .follow{

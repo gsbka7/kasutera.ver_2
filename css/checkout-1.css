@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body input[type=number]::-webkit-outer-spin-button,
+body input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main {
+  padding: 50px 0;
+  margin: 50px 0;
+}
+
+.main .container {
+  width: 100%;
+}
+
+.step {
+  width: 50px;
+  height: 50px;
+}
+
+.progress {
+  height: 10px;
+  top: 21px;
+  right: 0;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.detail {
+  display: block;
+  font-size: 30px;
+}
+
+.product .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.product .product-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product .product-spec {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.4;
+}
+
+.input-group {
+  width: 180px;
+}
+
+.input-group .input-group-text, .input-group .form-control {
+  height: 25px;
+}
+
+.input-group .input-group-text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.input-group .form-control {
+  text-align: center;
+}
+
+.input-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ccc;
+}
+
+.total-price {
+  width: 100px;
+  text-align: center;
+}
+
+.qty, .order-subtotal, .fee, .order-price {
+  width: 150px;
+}
+
+.stepBtn {
+  width: 100%;
+}
+
+.stepBtn .btn {
+  padding: 10px 50px;
+  border: 2px solid #007BFF;
+  text-decoration: none;
+}
+
+.stepBtn .btn:hover {
+  background-color: #007BFF;
+  color: #FFF;
+}
+/*# sourceMappingURL=checkout-1.css.map */

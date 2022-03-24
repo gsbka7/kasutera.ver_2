@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>確認購物車</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/checkout-1.css">
+</head>
+
+<body>
+    <div class="main bg-secondary">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">購物車</div>
+                <div class="card-body p-5">
+                    <div class="process d-flex py-3">
+                        <div class="w-25 d-flex flex-column align-items-center position-relative">
+                            <div class="step bg-success rounded-circle d-flex align-items-center justify-content-center">１</div>
+                            <span>確認購物車</span>
+                            <div class="progress position-absolute w-50">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="w-25 d-flex flex-column align-items-center position-relative">
+                            <div class="step bg-success rounded-circle d-flex align-items-center justify-content-center">２</div>
+                            <span>付款與運送方式</span>
+                            <div class="progress position-absolute w-50">
+                                <div class="progress-bar" role="progressbar" style="width: 0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="w-25 d-flex flex-column align-items-center position-relative">
+                            <div class="step bg-success rounded-circle d-flex align-items-center justify-content-center">３</div>
+                            <span>填寫資料</span>
+                            <div class="progress position-absolute w-50">
+                                <div class="progress-bar" role="progressbar" style="width: 0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="w-25 d-flex flex-column align-items-center position-relative">
+                            <div class="step bg-success rounded-circle d-flex align-items-center justify-content-center">４</div>
+                            <span>完成訂購</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <span class="detail pt-2 pb-4">訂單明細</span>
+                    <div class="item px-3 py-4 d-flex justify-content-between">
+                        <div class="product d-flex align-items-center \">
+                            <img class="logo" src="/img/kasutera-logo.png" alt="">
+                            <div class="product-info pl-3">
+                                <div class="product-name">長崎蛋糕</div>
+                                <div class="product-spec">5片</div>
+                            </div>
+                        </div>
+                        <div class="data d-flex align-items-center">
+                            <div class="input-group pr-4 d-flex justify-content-between align-items-center">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text minus">－</span>
+                                </div>
+                                <input type="number" class="form-control inputCount" value="1" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                    <span class="input-group-text plus">＋</span>
+                                </div>
+                            </div>
+                            <span class="price sr-only">120</span>
+                            <div class="total-price">$
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-3 py-2 d-flex justify-content-between">
+                        <div class="product d-flex align-items-center \">
+                            <img class="logo" src="/img/kasutera-logo.png" alt="">
+                            <div class="product-info pl-3">
+                                <div class="product-name">長崎蛋糕</div>
+                                <div class="product-spec">8片</div>
+                            </div>
+                        </div>
+                        <div class="data d-flex align-items-center">
+                            <div class="input-group pr-4 d-flex justify-content-between align-items-center">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text minus">－</span>
+                                </div>
+                                <input type="number" class="form-control inputCount shadow-none" value="1" max="100" min="2" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                    <span class="input-group-text plus">＋</span>
+                                </div>
+                            </div>
+                            <span class="price sr-only">200</span>
+                            <div class="total-price">$
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-3 py-2 d-flex justify-content-between">
+                        <div class="product d-flex align-items-center">
+                            <img class="logo" src="/img/oishii-logo.png" alt="">
+                            <div class="product-info pl-3">
+                                <div class="product-name">奧喜燒</div>
+                                <div class="product-spec">1包</div>
+                            </div>
+                        </div>
+                        <div class="data d-flex align-items-center">
+                            <div class="input-group pr-4 d-flex justify-content-between align-items-center">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text minus">－</span>
+                                </div>
+                                <input type="number" class="form-control inputCount" value="1" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                    <span class="input-group-text plus">＋</span>
+                                </div>
+                            </div>
+                            <span class="price sr-only">120</span>
+                            <div class="total-price">$
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="order-total d-flex flex-column align-items-end">
+                        <div class="qty">數量：<span></span></div>
+                        <div class="order-subtotal">小計：<span></span></div>
+                        <div class="fee">運費：<span></span></div>
+                        <div class="order-price">總計：<span></span></div>
+                    </div>
+                    <hr>
+                    <div class="stepBtn d-flex py-3 justify-content-end">
+                        <a href="./checkout-2.html" class="btn btn-primary">下一步</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+<script src="./js/checkout-1.js"></script>
+
+
+</html>

@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+
+    input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+}
+
+.main{
+    padding: 50px 0;
+    margin: 50px 0;
+
+    .container{
+        width: 100%;
+        
+    }
+}
+
+.step{
+    width: 50px;
+    height: 50px;
+
+}
+
+.progress{
+    height: 10px;
+    top: 21px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.detail{
+    display: block;
+    font-size: 30px;
+}
+
+.product{ 
+   .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .product-name{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .product-spec{
+        font-size: 14px;
+        font-weight: 600;
+        opacity: 0.4;
+    }
+}
+
+.input-group{
+    width: 180px;
+   
+    
+    .input-group-text, .form-control{
+        height: 25px;
+    }
+
+    .input-group-text{
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .form-control{
+        text-align: center;
+    }
+    
+    .form-control:focus{
+        box-shadow:none;
+        border:1px solid #ccc;
+        
+    }
+}
+
+.total-price{
+    width: 100px;
+    text-align: center;
+}
+
+.qty, .order-subtotal, .fee, .order-price{
+    width: 150px;
+
+}
+
+.stepBtn{
+    width: 100%;
+    .btn{
+        padding: 10px 50px;
+        border: 2px solid #007BFF;
+        text-decoration: none;
+    }
+    .btn:hover{
+        background-color: #007BFF ;
+        color: #FFF;
+    }
+}
