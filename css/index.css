@@ -6,10 +6,8 @@
 }
 
 @font-face {
-  * {
     font-family: setoFont;
     src: url(/fonts/setofont.woff);
-  }
 }
 
 body {
@@ -137,8 +135,10 @@ nav .cartIcon .cart2 .order {
   height: 10px;
   border-radius: 50%;
   background: #000;
-  -webkit-animation: circlemove 1.6s ease-in-out infinite, cirlemovehide 1.6s ease-out infinite;
-          animation: circlemove 1.6s ease-in-out infinite, cirlemovehide 1.6s ease-out infinite;
+  -webkit-animation: circlemove 1.6s ease-in-out infinite,
+ cirlemovehide 1.6s ease-out infinite;
+          animation: circlemove 1.6s ease-in-out infinite,
+ cirlemovehide 1.6s ease-out infinite;
 }
 
 .scrollDown:after {
@@ -326,8 +326,10 @@ nav .cartIcon .cart2 .order {
 
 .news .newsBlock a:hover .icon span {
   position: relative;
-  -webkit-animation: arrowmove 1.5s ease-in-out infinite, arrowmovehide 1.5s ease-out infinite;
-          animation: arrowmove 1.5s ease-in-out infinite, arrowmovehide 1.5s ease-out infinite;
+  -webkit-animation: arrowmove 1.5s ease-in-out infinite,
+ arrowmovehide 1.5s ease-out infinite;
+          animation: arrowmove 1.5s ease-in-out infinite,
+ arrowmovehide 1.5s ease-out infinite;
 }
 
 @-webkit-keyframes arrowmove {

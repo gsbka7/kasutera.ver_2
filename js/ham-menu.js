@@ -1,11 +1,11 @@
-$(".openbtn1").click(function () {//ボタンがクリックされたら
-	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-    $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-    $(".circle-bg").toggleClass('circleactive');//丸背景にcircleactiveクラスを付与
+$(".openbtn1").click(function () {
+	$(this).toggleClass('active');
+    $("#g-nav").toggleClass('panelactive');
+    $(".circle-bg").toggleClass('circleactive');
 });
 
-$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-    $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
-    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
-    $(".circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
+$("#g-nav a").click(function () {
+    $(".openbtn1").removeClass('active');
+    $("#g-nav").removeClass('panelactive');
+    $(".circle-bg").removeClass('circleactive');
 });
