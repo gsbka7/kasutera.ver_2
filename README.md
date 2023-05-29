@@ -1,4 +1,4 @@
-# 【 BMI計算機 】
+# 【 靜態網站切版設計 】
 
 <img width="500" height="800" src="https://github.com/gsbka7/kasutera.ver_2/blob/main/img-readme/kasutera.ver_2.jpg"/>
 
